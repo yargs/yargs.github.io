@@ -1,31 +1,38 @@
 /* LANDING PAGE SCSS */
 
 .landing-wrapper {
-  height: 60vh;
+  height: 75vh;
   box-sizing: border-box;
-  #landing-image {
-    width: 60%;
-    float: left;
-    .img-wrapper {
-      height: 100%;
-      width: auto;
+  display: flex;
+  justify-content: space-between;
+  #img-wrapper {
+    height: 100%;
+    width: auto;
+    margin: 0 5em 0 0;
+    .landing-img {
+      width: 80%;
+      height: auto;
     }
   }
   #description-wrapper {
-    margin: 0 5em;
+    margin: 0 0 0 5em;
   }
 }
 
-.description {
-  color: #17223C; 
-  font-family: "PT Serif";
-  font-size: 1.5em;
+.title-text {
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  font-size: 3em;
   display: inline;
+}
+
+.description {
+  @extend .title-text;
+  color: $blue-color; 
 }
 
 
 .pink-highlight {
-  color: #fff;
+  background-color: $pink-color;
   display: inline;
-  background-color: #F49BC2;
 }
