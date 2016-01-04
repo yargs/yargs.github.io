@@ -86,6 +86,25 @@
     }
 }
 
+/* GENERAL STYLES */
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+
+}
+
+.centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 /**

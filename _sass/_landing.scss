@@ -3,23 +3,29 @@
 .landing-wrapper {
   height: 60vh;
   box-sizing: border-box;
-  #wrapper-image {
-    background: url(https://cloud.githubusercontent.com/assets/37303/12069651/d0ce8b7c-aff3-11e5-9c1a-2b003b734acc.png) no-repeat center center fixed;
-    background-size: cover;
+  #landing-image {
+    width: 60%;
+    float: left;
+    .img-wrapper {
+      height: 100%;
+      width: auto;
+    }
   }
-  #description {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  #description-wrapper {
+    margin: 0 5em;
   }
 }
 
 .description {
-  color: #fff; 
-  font-family: serif;
+  color: #17223C; 
+  font-family: "PT Serif";
+  font-size: 1.5em;
+  display: inline;
 }
 
+
 .pink-highlight {
-  color: #0c0c0c;
+  color: #fff;
+  display: inline;
   background-color: #F49BC2;
 }
