@@ -1,6 +1,7 @@
 # Site settings
+title: Yargs
 
-# Build settings
+# Build setting
 markdown: kramdown
 gems:
     - jekyll-redirect-from
