@@ -8,20 +8,16 @@
   #img-wrapper {
     height: 100%;
     width: auto;
-    margin: 0 5em 0 0;
     .landing-img {
       width: 80%;
       height: auto;
     }
   }
-  #description-wrapper {
-    margin: 0 0 0 5em;
-  }
 }
 
 .title-text {
   font-family: $base-font-family;
-  font-weight: $base-font-weight;
+  font-weight: 500;
   font-size: 3em;
   display: inline;
 }
