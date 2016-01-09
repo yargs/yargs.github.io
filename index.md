@@ -23,7 +23,11 @@ layout: default
       <i class="fa fa-angle-down fa-4x"></i>
     </div>
      
-    <div class="overview">
+    <div id="overview">
+      <!-- TODO: write an overview/description of yargs -->
+      <div markdown="1">
+        Yargs is a node.js library to help you build your command line program. 
+      </div>
     </div>
 
   </div>
