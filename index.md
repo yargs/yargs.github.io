@@ -20,7 +20,7 @@ layout: default
       </div>
     </div>
     <div class="arrow centre">
-      <i class="fa fa-angle-down fa-4x"></i>
+      <i id="angle-down" class="fa fa-angle-down fa-4x"></i>
     </div>
      
     <div id="overview">

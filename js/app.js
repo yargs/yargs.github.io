@@ -1,5 +1,5 @@
 function App() {
-  this.angleDown = $(".fa .fa-angle-down")  
+  this.angleDown = $("#angle-down")  
 }
 
 // arrow down click trigger
