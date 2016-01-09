@@ -3,12 +3,12 @@ function App() {
 }
 
 // arrow down click trigger
-App.prototype.scrollToOverview() {
+App.prototype.scrollToOverview = function() {
   scrollToElement("#overview", 1000, 0) 
 }
 
 // TODO: implement smooth scroll triggered on mouse move down
-App.prototype.smoothScroll() {
+App.prototype.smoothScroll = function() {
   
 }
 
