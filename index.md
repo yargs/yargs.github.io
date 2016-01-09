@@ -19,9 +19,11 @@ layout: default
         </div>
       </div>
     </div>
-    
+    <div class="arrow centre">
+      <i class="fa fa-angle-down fa-4x"></i>
+    </div>
+     
     <div class="overview">
-      
     </div>
 
   </div>
