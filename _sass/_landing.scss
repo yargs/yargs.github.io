@@ -3,8 +3,10 @@
 .landing-wrapper {
   height: 75vh;
   box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
+  background: url(../images/ship-left.png) no-repeat center center fixed;
+  background-size: 100%; 
+  //display: flex;
+  //justify-content: space-between;
   #img-wrapper {
     height: 100%;
     width: auto;
@@ -25,6 +27,8 @@
 .description {
   @extend .title-text;
   color: $blue-color; 
+  padding-top: 5%;
+  width: 50%;
 }
 
 
