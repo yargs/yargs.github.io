@@ -7,13 +7,15 @@
     background-color: $light-grey;
 
     // Positioning context for the mobile navigation icon
-    position: relative;
+    position: fixed;
+    width: 100%;
 }
 
 .site-title {
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
+    padding-left: 2em;
     font-family: $base-font-family;
     font-weight: $base-font-weight;
     font-size: 3em; 
@@ -24,6 +26,13 @@
     &:visited {
         color: $grey-color-dark;
     }
+}
+
+.site-logo {
+  position: absolute;
+  top: 0.4em;
+  width: 7em;
+  left: 0.3em;
 }
 
 .site-nav {
@@ -184,12 +193,13 @@
 /**
  * Page content
  */
-.page-content {
-   // padding: $spacing-unit 0;
+.page-item {
+  padding: $spacing-unit 0;
 }
 
 .page-heading {
-    font-size: 20px;
+    font-weight: $base-font-weight;
+    font-size: 2em;
 }
 
 .post-list {

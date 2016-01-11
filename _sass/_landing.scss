@@ -1,12 +1,14 @@
 /* LANDING PAGE SCSS */
 
 .landing-wrapper {
-  height: 75vh;
+  height: 100vh;
   box-sizing: border-box;
   background: url(../images/ship-left.png) no-repeat center center fixed;
   background-size: 100%; 
-  //display: flex;
-  //justify-content: space-between;
+  //TODO: move background size to media-query; get media-query to work with build;
+  //@include media-query($on-laptop) {
+  //}
+
   #img-wrapper {
     height: 100%;
     width: auto;
@@ -24,12 +26,19 @@
   display: inline;
 }
 
-.description {
+.title {
   @extend .title-text;
   color: $blue-color; 
   float: left;
   padding-top: 10%;
   width: 50%;
+
+  //TODO: get media query to work with build;
+  //@include media-query($on-palm) {
+  //  font-size: 1em;
+  //  padding-top: 40%;
+  //}
+
 }
 
 
