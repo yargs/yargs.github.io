@@ -125,11 +125,22 @@
  * Site footer
  */
 
-.footer-text {
+.footer-items {
   font-family: $base-font-family;
   font-size: $base-font-size;
+  font-weight: $base-font-weight;
   color: $blue-color;
-  display: inline;
+  padding: 0.3em;
+  a {
+    color: $blue-color;
+    &:hover {
+      text-decoration: none; 
+    }
+  }
+}
+
+.footer-text {
+  padding-right: 0.2em;
 }
 
 .footer-heading {
