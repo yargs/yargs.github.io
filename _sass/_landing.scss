@@ -17,9 +17,9 @@
   }
 }
 
-.title-text {
+.title-text h1 {
   font-family: $base-font-family;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 3em;
   display: inline;
 }
@@ -27,7 +27,8 @@
 .description {
   @extend .title-text;
   color: $blue-color; 
-  padding-top: 5%;
+  float: left;
+  padding-top: 10%;
   width: 50%;
 }
 

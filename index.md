@@ -6,9 +6,8 @@ layout: default
   
     <div class="landing-wrapper">
       <div class="wrapper">
-        <div class="description left">
-          Yargs be a node.js library fer hearties tryin' ter 
-          <div class="pink-highlight">parse optstrings.</div>
+        <div class="description">
+          <h1 class="pink-highlight">Yargs be a node.js library fer hearties tryin' ter parse optstrings.</h1>
         </div>
       </div>
     </div>
