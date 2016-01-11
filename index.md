@@ -27,6 +27,9 @@ layout: default
       <!-- TODO: write an overview/description of yargs -->
         Yargs is a node.js library to help you build your command line program. 
     </div>
+    <div id="example">
+      <!-- TODO: choose an basic example for landing page -->
+    </div>
 
   </div>
 
