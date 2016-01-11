@@ -124,8 +124,12 @@
 /**
  * Site footer
  */
-.site-footer {
-    padding: $spacing-unit 0;
+
+.footer-text {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  color: $blue-color;
+  display: inline;
 }
 
 .footer-heading {
