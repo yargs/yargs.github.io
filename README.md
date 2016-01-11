@@ -7,11 +7,10 @@ www for [Yargs](github.com/bcoe/yargs), your favourite CLI option parser
 
 This site is built with [jekyll](http://jekyllrb.com/). To get started ensure you have [ruby](https://www.ruby-lang.org/en/documentation/installation/). Then:
 
-1. Install build tools.
+1. Install bundler.
 
 ``` shell
 $ [sudo] gem install bundler
-$ [sudo] gem install jekyll
 ```
 
 2. `cd` into this repository
@@ -25,8 +24,9 @@ $ bundle install
 3. Run jekyll:
 
   ``` shell
-  $ jekyll serve
+  $ bundle exec jekyll serve
   ```
+
 4. Make changes && view them on http://localhost:4000
 
 ### Directory structure:
