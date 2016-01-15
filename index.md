@@ -11,14 +11,4 @@ layout: default
       </div>
     </div>
   </div>
-
-  <div class="wrapper">
-    <div class="installation">
-      <div class="page-heading">Install:</div>
-    </div>
-    <div class="install" markdown="1">
-      $ npm install yargs --save
-    </div>
-  </div>
-
 </div>
