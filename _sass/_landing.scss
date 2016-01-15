@@ -6,8 +6,9 @@
   background: url(../images/ship-left.png) no-repeat center center fixed;
   background-size: 100%; 
   //TODO: move background size to media-query; get media-query to work with build;
-  //@include media-query($on-laptop) {
-  //}
+  @include media-query($on-palm) {
+    background-size: initial;
+  }
 
   #img-wrapper {
     height: 100%;
@@ -30,14 +31,14 @@
   @extend .title-text;
   color: $blue-color; 
   float: left;
-  padding-top: 10%;
+  padding-top: 15%;
   width: 50%;
 
   //TODO: get media query to work with build;
-  //@include media-query($on-palm) {
-  //  font-size: 1em;
-  //  padding-top: 40%;
-  //}
+  @include media-query($on-palm) {
+    font-size: 0.3em;
+    padding-top: 40%;
+  }
 
 }
 
