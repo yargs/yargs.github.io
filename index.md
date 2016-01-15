@@ -13,11 +13,13 @@ layout: default
   </div>
 
   <div class="wrapper">
-    <div class="installation">
+    <div class="page-content">
       <div class="page-heading">Install:</div>
-    </div>
-    <div class="install" markdown="1">
-      $ npm install yargs --save
+      <pre>
+        <code class="language-sh">
+          $ npm install yargs --save
+        </code>
+      </pre>
     </div>
   </div>
 
