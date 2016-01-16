@@ -36,8 +36,9 @@
 
   //TODO: get media query to work with build;
   @include media-query($on-palm) {
-    font-size: 0.3em;
+    font-size: 0.5em;
     padding-top: 40%;
+    width: 70%;
   }
 
 }
@@ -52,3 +53,11 @@
   color: $blue-color;
   font-size: $base-font-size;
 }
+
+// align the two boxes vertically instead of horizontally;
+@include media-query($on-palm) {
+  .page-content.align-items {
+    display: block;
+  }
+}
+
