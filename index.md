@@ -28,10 +28,10 @@ layout: default
 
         <div class="page-heading">Install</div>
         <p class="description">
-          Open yer terminal, and run using npm: 
+          Open your terminal, navigate to your project, and run using npm: 
         </p>
         <div class="sh-code">
-          $ npm install yargs --save
+          $ npm install --save yargs 
         </div>
 
       </div>
