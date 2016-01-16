@@ -38,5 +38,4 @@ layout: default
       
     </div>
   </div>
-
 </div>

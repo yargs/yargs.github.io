@@ -1,4 +1,4 @@
-#[yargs.github.io](yargs.github.io)
+#[yargs.js.org](yargs.js.org)
 
 www for [Yargs](github.com/bcoe/yargs), your favourite CLI option parser
 
