@@ -154,6 +154,16 @@
   padding-top: 5%;
 }
 
+.page-box {
+  width: 50%;
+  border: 1px solid $grey-color-light;
+  margin-left: 0.5em;
+
+  &:first-child {
+    margin: 0 0.5em 0 0;
+  }
+}
+
 .page-heading {
     font-weight: $base-font-weight;
     font-size: 2em;
