@@ -18,7 +18,8 @@ layout: default
       <div class="page-box">
       
         <div class="page-heading">What's Yargs?</div>
-        <div class="">
+        <div class="description">
+          Yargs is a node.js library fer option parsin' fer hearties who hate option parsin'. This here module is for hearties who like all the --bells and -whistlz of program usage but think optstrings are a waste of yer time.
         </div>
 
       </div>
@@ -27,7 +28,7 @@ layout: default
 
         <div class="page-heading">Install</div>
         <p class="description">
-          Open your terminal, and: 
+          Open yer terminal, and run using npm: 
         </p>
         <div class="sh-code">
           $ npm install yargs --save

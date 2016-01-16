@@ -48,6 +48,7 @@
 }
 
 .description {
-  font-family: "WorkSans", sans-serif;
+  font-family: $sans-font-family; 
+  color: $blue-color;
   font-size: $base-font-size;
 }
