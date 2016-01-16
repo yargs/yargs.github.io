@@ -13,7 +13,7 @@ layout: default
   </div>
 
   <div class="wrapper">
-    <div class="page-content">
+    <div class="page-content align-items">
 
       <div class="page-box">
       
@@ -25,12 +25,13 @@ layout: default
 
       <div class="page-box">
 
-        <div class="page-heading">Install:</div>
-        <pre>
-          <code class="language-sh">
-            $ npm install yargs --save
-          </code>
-        </pre>
+        <div class="page-heading">Install</div>
+        <p class="description">
+          Open your terminal, and: 
+        </p>
+        <div class="sh-code">
+          $ npm install yargs --save
+        </div>
 
       </div>
       

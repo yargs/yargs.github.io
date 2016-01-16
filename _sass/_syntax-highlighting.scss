@@ -65,3 +65,12 @@
     .vi    { color: #008080 } // Name.Variable.Instance
     .il    { color: #099 } // Literal.Number.Integer.Long
 }
+
+.sh-code {
+  background-color: $pink-color;
+  font-size: $base-font-size;
+  font-family: monospace;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  border-radius: 0.35em;
+}

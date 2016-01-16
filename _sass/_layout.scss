@@ -120,6 +120,11 @@
   align-items: center;
 }
 
+.align-items {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 /**
  * Site footer
@@ -151,12 +156,14 @@
 }
 
 .page-content {
-  padding-top: 5%;
+  padding: 2em 0;
 }
 
 .page-box {
   width: 50%;
   border: 1px solid $grey-color-light;
+  border-radius: 0.2em;
+  padding: 0.5em;
   margin-left: 0.5em;
 
   &:first-child {
