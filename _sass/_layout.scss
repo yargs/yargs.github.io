@@ -5,6 +5,7 @@
     border-bottom: 1px solid $grey-color-light;
     min-height: 65px;
     background-color: $light-grey;
+    z-index: 1;
 
     // Positioning context for the mobile navigation icon
     position: fixed;
