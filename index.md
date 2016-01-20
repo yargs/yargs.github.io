@@ -18,9 +18,9 @@ layout: default
       <div class="page-box">
       
         <div class="page-heading">What's Yargs?</div>
-        <div class="description">
-          Yargs is a node.js library fer option parsin' fer hearties who hate option parsin'. This here module is for hearties who like all the --bells and -whistlz of program usage but think optstrings are a waste of yer time.
-        </div>
+        <p class="description">
+          Yargs is a command line argument parsing library. It helps you define options, arguments, and commands you want to accept in your application. In the meantime, you can focus on building out your program's functionality. As you build out your application, you are able to access the arguments from the object yargs created for you. 
+        </p>
 
       </div>
 

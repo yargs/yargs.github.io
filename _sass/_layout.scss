@@ -121,6 +121,10 @@
   align-items: center;
 }
 
+.align-bottom {
+  align-self: flex-end;
+}
+
 .align-items {
   display: flex;
   justify-content: space-between;
