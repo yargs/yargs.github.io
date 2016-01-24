@@ -1,6 +1,6 @@
-#[yargs.js.org](yargs.js.org)
+#[yargs.js.org](http://yargs.js.org)
 
-www for [Yargs](github.com/bcoe/yargs), your favourite CLI option parser
+www for [Yargs](https://github.com/bcoe/yargs), your favourite CLI option parser
 
 
 ### Setup
