@@ -1,10 +1,11 @@
 /* LANDING PAGE SCSS */
 
 .landing-wrapper {
-  height: 95vh;
+  height: 75vh;
   box-sizing: border-box;
   background: url(../images/ship-left.png) no-repeat center center fixed;
   background-size: 100%; 
+  z-index: 1;
   //TODO: move background size to media-query; get media-query to work with build;
   @include media-query($on-palm) {
     background-size: initial;
@@ -36,18 +37,28 @@
 
   //TODO: get media query to work with build;
   @include media-query($on-palm) {
-    font-size: 0.3em;
+    font-size: 0.5em;
     padding-top: 40%;
+    width: 70%;
   }
 
 }
-
 
 .pink-highlight {
   background-color: $pink-color;
   display: inline;
 }
 
-.arrow {
+.description {
+  font-family: $sans-font-family; 
   color: $blue-color;
+  font-size: $base-font-size;
 }
+
+// align the two boxes vertically instead of horizontally;
+@include media-query($on-palm) {
+  .page-content.align-items {
+    display: block;
+  }
+}
+

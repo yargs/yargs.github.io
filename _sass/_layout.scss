@@ -121,6 +121,15 @@
   align-items: center;
 }
 
+.align-bottom {
+  align-self: flex-end;
+}
+
+.align-items {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 /**
  * Site footer
@@ -149,6 +158,31 @@
  */
 .page-item {
   padding: $spacing-unit 0;
+}
+
+.page-content {
+  padding: 1.5em 0;
+}
+
+.page-box {
+  width: 50%;
+  border: 1px solid $grey-color-light;
+  border-radius: 0.2em;
+  padding: 0.5em;
+  margin-left: 0.5em;
+
+  &:first-child {
+    margin: 0 0.5em 0 0;
+  }
+  
+  @include media-query($on-palm) {
+    margin: 0.5em 0;
+    width: inherit;
+    &:first-child {
+      margin: 0.5em 0;
+    }
+  }
+
 }
 
 .page-heading {
