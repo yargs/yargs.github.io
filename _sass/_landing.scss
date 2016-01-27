@@ -55,6 +55,11 @@
   font-size: $base-font-size;
 }
 
+.instructions {
+  @extend .description;
+  display: inline;
+}
+
 // align the two boxes vertically instead of horizontally;
 @include media-query($on-palm) {
   .page-content.align-items {
