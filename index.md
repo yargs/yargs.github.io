@@ -13,7 +13,7 @@ layout: default
   <div class="wrapper">
     <div class="page-content align-items">
 
-      <div class="page-box markdown-body">
+      <div class="page-box-full markdown-body">
       
         <div class="page-heading">What's Yargs?</div>
         <p class="description">
