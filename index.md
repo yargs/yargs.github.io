@@ -2,24 +2,42 @@
 layout: default 
 ---
 
-{% include landing.html %} 
+<div class="landing-wrapper">
+  <div class="wrapper">
+    <div class="title">
+      <h1 class="pink-highlight">Yargs be a node.js library fer hearties tryin' ter parse optstrings.</h1>
+    </div>
+  </div>
+</div>
 
-##Yargs helps you parse you arguments and sets examples
 
-```javascript
-    // file name: hello.js
-    var argv = require('yargs')
-      .usage('Usage: $0 [options] <name>')
-      .option('t', {
-        alias: 'thanks',
-        describe: 'Print a "thanks" message too',
-        type: 'boolean'
+#Getting Started
+
+
+    #!/usr/bin/env node
+
+    require('yargs')
+      .usage('$0 <cmd> [args]')
+      .option('name', {
+        alias: 'n',
+        describe: 'provide yer name!'
       })
-      .help('h').alias('h', 'help')
-      .demand(1) // at least one "flagless" argument required for <name>
-      .example('$0 Bob', 'Prints: Hello Bob!')
-      .example('$0 -t Bob', 'Prints: Hello Bob! Thanks for using yargs!')
-      .example('$0 -h', 'Prints this help text')
-      .argv 
-```
+      .command('hello', 'welcome ter yargs!', function (yargs, argv) {
+        console.log('hello', argv.name, 'welcome to yargs!')
+      })
+      .help('help')
+      .argv
 
+    node example.js --help
+
+    test <cmd> [args]
+
+    Commands:
+      hello  welcome ter yargs!
+
+    Options:
+      --name, -n  provide yer name!
+      --help      Show help                                                [boolean]
+
+    node example.js hello --name Parrot 
+    hello Parrot welcome to yargs!
