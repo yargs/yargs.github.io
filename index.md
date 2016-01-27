@@ -19,8 +19,12 @@ layout: default
       
         <div class="page-heading">What's Yargs?</div>
         <p class="description">
-          Yargs is a command line argument parsing library. It helps you define options, arguments, and commands you want to accept in your application. In the meantime, you can focus on building out your program's functionality. As you build out your application, you are able to access the arguments from the object yargs created for you. 
+        Yargs is a command line argument parsing library. It helps you define options, arguments, and commands you want to accept in your application. As you build out your application, you are able to access the arguments from the object yargs created for you.
         </p>
+        <p class="description">
+        <em>But wait, there is more!</em> Yargs not only parses your arguments, but automatically generates an elegant UI for your CLI application, so you can focus on building out your program's functionality using yargs' automatically generated elegant UI.
+        </p>
+          
 
       </div>
 
