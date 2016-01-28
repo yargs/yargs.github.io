@@ -46,68 +46,60 @@ layout: default
         <div class="page-heading"> Getting Started </div>
 
         <div class="instructions"> After creating </div>
-        <div class="instructions reg-code">hello.js</div>
+        <div class="instructions hljs language-bash">hello.js</div>
         <div class="instructions"> start with the following code to get you going: </div>
         
-        <div class="reg-code">
-          <pre>
-            <code>
-              #!/usr/bin/env node
+        <pre>
+          <code class="hljs language-javascript">
+            #!/usr/bin/env node
 
-              require('yargs')
-                .usage('$0 <cmd> [args]')
-                .option('name', {
-                  alias: 'n',
-                  describe: 'provide yer name!'
-                })
-                .command('hello', 'welcome ter yargs!', function (yargs, argv) {
-                  console.log('hello', argv.name, 'welcome to yargs!')
-                })
-                .help('help')
-                .argv
-            </code>
-          </pre>
-        </div>
+            require('yargs')
+              .usage('$0 <cmd> [args]')
+              .option('name', {
+                alias: 'n',
+                describe: 'provide yer name!'
+              })
+              .command('hello', 'welcome ter yargs!', function (yargs, argv) {
+                console.log('hello', argv.name, 'welcome to yargs!')
+              })
+              .help('help')
+              .argv
+          </code>
+        </pre>
 
         <div class="instructions"> And in your terminal run: </div>
 
-        <div class="reg-code">
-          <pre>
-            <code>
-              $ node example.js --help
-            </code>
-          </pre>
-        </div>
+        <pre>
+          <code class="hljs language-bash">
+            $ node example.js --help
+          </code>
+        </pre>
 
         <div class="instructions"> To get this output: </div>
 
-        <div class="reg-code">
-          <pre>
-            <code>
-              test <cmd> [args]
+        <pre>
+          <code class="hljs language-bash">
+            test <cmd> [args]
 
-              Commands:
-                hello  welcome ter yargs!
+            Commands:
+              hello  welcome ter yargs!
 
-              Options:
-                --name, -n  provide yer name!
-                --help      Show help                                                [boolean]
-            </code>
-          </pre>
-        </div>
+            Options:
+              --name, -n  provide yer name!
+              --help      Show help                                                [boolean]
+          </code>
+        </pre>
 
         <div class="instructions"> Run </div>
-        <div class="instructions reg-code"> hello </div>
+        <div class="instructions hljs language-javascript"> hello </div>
         <div class="instructions"> command: </div>
 
-        <div class="reg-code">
-          <pre>
-            <code>
-              $ node example.js hello --name Parrot 
-              hello Parrot welcome to yargs!
-            </code>
-          </pre>
-        </div> 
+        <pre>
+          <code class="hljs language-bash">
+            $ node example.js hello --name Parrot 
+            hello Parrot welcome to yargs!
+          </code>
+        </pre>
        
       </div>
     </div>

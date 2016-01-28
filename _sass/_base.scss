@@ -122,35 +122,6 @@ blockquote {
 
 
 
-/**
- * Code formatting
- */
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
-}
-
-code {
-    padding: 1px 5px;
-}
-
-pre {
-    padding: 0px 1em;
-    overflow-x: auto;
-    white-space: pre-line;
-
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
-
-
 
 /**
  * Wrapper
