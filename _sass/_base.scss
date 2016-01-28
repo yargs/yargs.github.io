@@ -138,8 +138,10 @@ code {
 }
 
 pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
+    padding: 0px 1em;
+    overflow-x: auto;
+    white-space: pre-line;
+
 
     > code {
         border: 0;
