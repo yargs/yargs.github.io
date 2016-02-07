@@ -51,19 +51,19 @@ layout: default
         
         <pre>
           <code class="hljs language-javascript">
-            #!/usr/bin/env node
+  #!/usr/bin/env node
 
-            require('yargs')
-              .usage('$0 <cmd> [args]')
-              .option('name', {
-                alias: 'n',
-                describe: 'provide yer name!'
-              })
-              .command('hello', 'welcome ter yargs!', function (yargs, argv) {
-                console.log('hello', argv.name, 'welcome to yargs!')
-              })
-              .help('help')
-              .argv
+  require('yargs')
+    .usage('$0 <cmd> [args]')
+    .option('name', {
+      alias: 'n',
+      describe: 'provide yer name!'
+    })
+    .command('hello', 'welcome ter yargs!', function (yargs, argv) {
+      console.log('hello', argv.name, 'welcome to yargs!')
+    })
+    .help('help')
+    .argv
           </code>
         </pre>
 
@@ -71,7 +71,7 @@ layout: default
 
         <pre>
           <code class="hljs language-bash">
-            $ node example.js --help
+  $ node example.js --help
           </code>
         </pre>
 
@@ -79,14 +79,14 @@ layout: default
 
         <pre>
           <code class="hljs language-bash">
-            test <cmd> [args]
+  test <cmd> [args]
 
-            Commands:
-              hello  welcome ter yargs!
+  Commands:
+    hello  welcome ter yargs!
 
-            Options:
-              --name, -n  provide yer name!
-              --help      Show help                                                [boolean]
+  Options:
+    --name, -n  provide yer name!
+    --help      Show help                                                [boolean]
           </code>
         </pre>
 
@@ -96,8 +96,8 @@ layout: default
 
         <pre>
           <code class="hljs language-bash">
-            $ node example.js hello --name Parrot 
-            hello Parrot welcome to yargs!
+  $ node example.js hello --name Parrot 
+  hello Parrot welcome to yargs!
           </code>
         </pre>
        
