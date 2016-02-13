@@ -5,3 +5,5 @@ title: yargs
 markdown: kramdown
 gems:
     - jekyll-redirect-from
+
+exclude: [vendor]
