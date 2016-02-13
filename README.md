@@ -1,7 +1,8 @@
 #[yargs.js.org](http://yargs.js.org)
 
-www for [Yargs](https://github.com/bcoe/yargs), your favourite CLI option parser
+[![Build Status](https://travis-ci.org/yargs/yargs.github.io.png)](https://travis-ci.org/yargs/yargs.github.io)
 
+www for [Yargs](https://github.com/bcoe/yargs), your favourite CLI option parser
 
 ### Setup
 
@@ -29,6 +30,15 @@ $ bundle install
 
 4. Make changes && view them on http://localhost:4000
 
+## Running Tests
+
+We use htmlproof to validate the HTML structure of the site generated
+by jekyll, to run tests:
+
+```sh
+bundle exec htmlproof ./_site --only-4xx --check-favicon --check-html
+```
+
 ### Directory structure:
 
 Jekyll compiles directories in this repo to its own `_site` directory. You will see it when you run `jekyll serve` locally. Page files can be written in either `.html` or `.md`.
@@ -45,6 +55,7 @@ Jekyll compiles directories in this repo to its own `_site` directory. You will 
 
 `js/` -- our basic js. They are not automatically compiled, and need to be included under `_includes/head.html`
 
+`_posts/` -- blog posts.
 
 ### License
 
