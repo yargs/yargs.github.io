@@ -19,7 +19,7 @@
     padding-left: 2em;
     font-family: $base-font-family;
     font-weight: $base-font-weight;
-    font-size: 3em; 
+    font-size: 3em;
     float: left;
     color: $purple-color;
 
@@ -144,7 +144,7 @@
   a {
     color: $blue-color;
     &:hover {
-      text-decoration: none; 
+      text-decoration: none;
     }
   }
 }
@@ -171,7 +171,7 @@
   &:first-child {
     margin: 0 0.5em 0 0;
   }
-  
+
   @include media-query($on-palm) {
     margin: 0.5em 0;
     width: inherit;
