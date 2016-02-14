@@ -135,6 +135,10 @@
  * Site footer
  */
 
+ .site-footer {
+   padding-top: 1.5em;
+ }
+
 .footer-items {
   font-family: $base-font-family;
   font-size: $base-font-size;
@@ -161,7 +165,10 @@
 }
 
 .page-content {
-  padding: 1.5em 0;
+  padding: 0 0 1.5em;
+  &:first-child {
+    padding: 1.5em 0;
+  }
 }
 
 .page-box {
@@ -193,8 +200,8 @@
 }
 
 .page-heading {
-    font-weight: $base-font-weight;
-    font-size: 2em;
+  font-weight: $base-font-weight;
+  font-size: 2em;
 }
 
 .post-list {
