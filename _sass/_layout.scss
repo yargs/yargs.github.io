@@ -156,6 +156,7 @@
 /**
  * Page content
  */
+ 
 .page-item {
   padding: $spacing-unit 0;
 }
@@ -193,8 +194,13 @@
 }
 
 .page-heading {
-    font-weight: $base-font-weight;
-    font-size: 2em;
+  font-weight: $base-font-weight;
+  font-size: 2em;
+}
+
+.page-title {
+  font-weight: $base-font-weight;
+  font-size: 3em;
 }
 
 .post-list {
