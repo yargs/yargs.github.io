@@ -6,6 +6,10 @@
     @extend .pink-highlight;
   }
 
+  #yargs-40-is-here {
+    margin-bottom: 1em;
+  }
+
   h2 {
     @extend .page-heading;
   }
@@ -23,10 +27,6 @@
     h2, p {
       margin: 0 auto;
     }
-  }
-
-  pre {
-    width: 100%;
   }
 
 }

@@ -57,9 +57,13 @@
   }
 }
 
-code {
-  max-width: 65%;
-  @include media-query($on-palm) {
-    max-width: none; 
-  }
+//code {
+//  max-width: 65%;
+//  @include media-query($on-palm) {
+//    max-width: none; 
+//  }
+//}
+
+pre {
+  width: 100%;
 }
