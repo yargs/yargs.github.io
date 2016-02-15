@@ -19,7 +19,7 @@
     padding-left: 2em;
     font-family: $base-font-family;
     font-weight: $base-font-weight;
-    font-size: 3em; 
+    font-size: 3em;
     float: left;
     color: $purple-color;
 
@@ -130,10 +130,21 @@
   justify-content: space-between;
 }
 
+.pink-highlight {
+  color: $blue-color;
+  background-color: $pink-color;
+  display: inline;
+}
+
+.description {
+  font-family: $sans-font-family; 
+  color: $blue-color;
+  font-size: $base-font-size;
+}
 
 /**
  * Site footer
- */
+ *
 
 .footer-items {
   font-family: $base-font-family;
@@ -144,7 +155,7 @@
   a {
     color: $blue-color;
     &:hover {
-      text-decoration: none; 
+      text-decoration: none;
     }
   }
 }
@@ -172,7 +183,7 @@
   &:first-child {
     margin: 0 0.5em 0 0;
   }
-  
+
   @include media-query($on-palm) {
     margin: 0.5em 0;
     width: inherit;
@@ -227,7 +238,23 @@
 /**
  * Posts
  */
+.post-url {
+  color: $blue-color;
+  &:visited {
+    color: $grey-color-dark;
+  }
+}
+
+.post-list {
+  list-style-type: none;
+}
+
+.date {
+  font-size: 0.9em;
+}
+
 .post-header {
+    padding-top: 2em;
     margin-bottom: $spacing-unit;
 }
 

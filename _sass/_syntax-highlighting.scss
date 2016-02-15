@@ -74,3 +74,20 @@
   padding: 0.5em 1em;
   border-radius: 0.35em;
 }
+
+.hljs {
+  color: $blue-color;
+  font-weight: $base-font-weight;
+}
+
+.hljs-string {
+  color: $purple-color;
+}
+
+.hljs-keyword {
+  color: $dark-pink-color;
+}
+
+.hljs-built_in {
+  color: $lt-purple-color;
+}

@@ -44,16 +44,6 @@
 
 }
 
-.pink-highlight {
-  background-color: $pink-color;
-  display: inline;
-}
-
-.description {
-  font-family: $sans-font-family; 
-  color: $blue-color;
-  font-size: $base-font-size;
-}
 
 .instructions {
   @extend .description;
@@ -67,9 +57,13 @@
   }
 }
 
-code {
-  max-width: 65%;
-  @include media-query($on-palm) {
-    max-width: none; 
-  }
+//code {
+//  max-width: 65%;
+//  @include media-query($on-palm) {
+//    max-width: none; 
+//  }
+//}
+
+pre {
+  width: 100%;
 }

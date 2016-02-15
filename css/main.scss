@@ -7,7 +7,7 @@
 
 // Our variables
 $base-font-family: "PT Serif", serif;
-$base-font-size:   1em;
+$base-font-size:   1.1em;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
@@ -24,7 +24,9 @@ $grey-color:       #828282;
 $light-grey:       #F2F1EF;
 $blue-color:       #17223C;
 $pink-color:       #F49BC2;
+$dark-pink-color:  #FF5AF7;
 $purple-color:     #313887;
+$lt-purple-color:  #505085;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
@@ -59,5 +61,6 @@ $on-laptop:        800px;
         "landing",
         "layout",
         "docs",
+        "blog",
         "syntax-highlighting"
 ;

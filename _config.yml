@@ -3,5 +3,9 @@ title: yargs
 
 # Build setting
 markdown: kramdown
+kramdown:
+  parse_block_html: true
 gems:
     - jekyll-redirect-from
+
+exclude: [vendor]
