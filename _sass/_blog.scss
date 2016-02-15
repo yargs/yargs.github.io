@@ -1,3 +1,18 @@
+.post-url {
+  color: $blue-color;
+  &:visited {
+    color: $grey-color-dark;
+  }
+}
+
+.post-list {
+  list-style-type: none;
+}
+
+.date {
+  font-size: 0.9em;
+}
+
 .blog-wrapper {
   padding: 7em 0;
 
