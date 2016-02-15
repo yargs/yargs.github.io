@@ -59,6 +59,6 @@
 code {
   max-width: 65%;
   @include media-query($on-palm) {
-    max-width: none; 
+    max-width: 80%; 
   }
 }

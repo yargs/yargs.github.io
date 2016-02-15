@@ -14,4 +14,15 @@
     @extend .description;
   }
 
+  .page-box.right {
+    width: 100%;
+    padding-top: 4.5em;
+    @include media-query($on-palm) {
+      padding: inherit;
+    }
+    h2, p {
+      margin: 0 auto;
+    }
+  }
+
 }
