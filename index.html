@@ -1,5 +1,5 @@
 ---
-layout: default 
+layout: default
 ---
 
   <div class="landing-wrapper">
@@ -14,14 +14,14 @@ layout: default
     <div class="page-content align-items">
 
       <div class="page-box-full markdown-body">
-      
+
         <div class="page-heading">What's Yargs?</div>
         <p class="description">
-          Yargs helps you build interactive command line user experiences by parsing arguments and generating an elegant user interface for your command line application so you don't have to.
+          Yargs helps you build interactive command line tools by parsing arguments and generating an elegant user interface.
         </p>
 
         <p class="description">
-          Yargs is an better-user-experience library. It comes with:
+          Yargs gives you:
         </p>
 
         <ul class="description">
@@ -31,8 +31,8 @@ layout: default
           <li> and much more. </li>
         </ul>
 
-        <p class="description">  
-          With the above functionalities, yargs allows you to focus on building out your program without worrying about your arguments.
+        <p class="description">
+          With these features, and many more, yargs allows you to focus on building your program without worrying about your args.
         </p>
 
       </div>
@@ -41,10 +41,10 @@ layout: default
 
         <div class="page-heading">Install</div>
         <p class="description">
-          Open your terminal, navigate to your project, and run using npm: 
+          Open your terminal, navigate to your project, and run using npm:
         </p>
         <div class="sh-code">
-          $ npm install --save yargs 
+          $ npm install --save yargs
         </div>
 
       </div>
@@ -58,18 +58,18 @@ layout: default
         <div class="instructions"> After creating </div>
         <div class="instructions hljs language-bash">hello.js</div>
         <div class="instructions"> start with the following code to get you going: </div>
-        
+
         <pre>
           <code class="hljs language-javascript">
   #!/usr/bin/env node
 
   require('yargs')
-    .usage('$0 <cmd> [args]')
+    .usage('$0 &lt;cmd&gt; [args]')
     .option('name', {
       alias: 'n',
       describe: 'provide yer name!'
     })
-    .command('hello', 'welcome ter yargs!', function (yargs, argv) {
+    .command('hello', 'welcome ter yargs!', {}, function (argv) {
       console.log('hello', argv.name, 'welcome to yargs!')
     })
     .help('help')
@@ -89,7 +89,7 @@ layout: default
 
         <pre>
           <code class="hljs language-bash">
-  test <cmd> [args]
+  test &lt;cmd&gt; [args]
 
   Commands:
     hello  welcome ter yargs!
@@ -106,17 +106,12 @@ layout: default
 
         <pre>
           <code class="hljs language-bash">
-  $ node example.js hello --name Parrot 
+  $ node example.js hello --name Parrot
   hello Parrot welcome to yargs!
           </code>
         </pre>
-       
+
       </div>
     </div>
 
   </div>
-</div>
-
-
-
-
