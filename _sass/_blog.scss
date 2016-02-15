@@ -1,7 +1,17 @@
-#blog-header {
-  padding-top: 80px;
-}
+.blog-wrapper {
+  padding: 7em 0;
 
-.page-box {
-  width: 60%;
+  h1 {
+    @extend .page-title;
+    @extend .pink-highlight;
+  }
+
+  h2 {
+    @extend .page-heading;
+  }
+
+  p, ol, ul {
+    @extend .description;
+  }
+
 }

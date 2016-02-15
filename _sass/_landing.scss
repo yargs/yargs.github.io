@@ -44,17 +44,6 @@
 
 }
 
-.pink-highlight {
-  background-color: $pink-color;
-  display: inline;
-}
-
-.description {
-  font-family: $sans-font-family; 
-  color: $blue-color;
-  font-size: $base-font-size;
-}
-
 .instructions {
   @extend .description;
   display: inline;
