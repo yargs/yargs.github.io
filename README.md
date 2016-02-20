@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/yargs/yargs.github.io.png)](https://travis-ci.org/yargs/yargs.github.io)
 
-www for [Yargs](https://github.com/bcoe/yargs), your favourite CLI option parser
+www for [Yargs](https://github.com/yargs/yargs), your favourite CLI option parser
 
 ### Setup
 
