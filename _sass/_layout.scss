@@ -10,6 +10,9 @@
     // Positioning context for the mobile navigation icon
     position: fixed;
     width: 100%;
+
+    //Notify browser that this element might need its own layer in future
+    will-change: transform;
 }
 
 .site-title {
