@@ -62,16 +62,17 @@ layout: default
   #!/usr/bin/env node
 
   require('yargs')
-    .usage('$0 &lt;cmd&gt; [args]')
-    .option('name', {
-      alias: 'n',
-      describe: 'provide yer name!'
-    })
-    .command('hello', 'welcome ter yargs!', {}, function (argv) {
+    .usage('$0 <cmd> [args]')
+    .command('hello [name]', 'welcome ter yargs!', {
+      name: {
+        default: 'default name'
+      }
+    }, function (argv) {
       console.log('hello', argv.name, 'welcome to yargs!')
     })
-    .help('help')
+    .help()
     .argv
+
           </code>
         </pre>
 
