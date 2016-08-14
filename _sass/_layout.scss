@@ -140,14 +140,14 @@
 }
 
 .description {
-  font-family: $sans-font-family; 
+  font-family: $sans-font-family;
   color: $blue-color;
   font-size: $base-font-size;
 }
 
 /**
  * Site footer
- *
+ **/
 
 .footer-items {
   font-family: $base-font-family;
@@ -155,6 +155,7 @@
   font-weight: $base-font-weight;
   color: $blue-color;
   padding: 0.3em;
+  padding-bottom: 15px;
   a {
     color: $blue-color;
     &:hover {
@@ -163,14 +164,19 @@
   }
 }
 
+.footer-items img {
+  padding-right: 15px;
+}
+
 .footer-text {
   padding-right: 0.2em;
+  padding-top: 3px;
 }
 
 /**
  * Page content
  */
- 
+
 .page-item {
   padding: $spacing-unit 0;
 }
