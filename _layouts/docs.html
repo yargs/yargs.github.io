@@ -52,7 +52,7 @@
             if (!version) return nextSvc()
             console.log('determined latest version as %s via %s', version, svc)
             Flatdoc.run({
-              fetcher: Flatdoc.file('https://raw.githubusercontent.com/yargs/yargs/v' + version + '/README.md')
+              fetcher: Flatdoc.file('https://raw.githubusercontent.com/yargs/yargs/v' + version + '/docs/api.md')
             })
           },
           error: function () {
