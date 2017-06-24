@@ -37,7 +37,7 @@
           // no jsonp services worked, just use master
           console.log('falling back to master branch :(')
           return Flatdoc.run({
-            fetcher: Flatdoc.github('yargs/yargs')
+            fetcher: Flatdoc.github('yargs/yargs', 'docs/api.md')
           })
         }
         $.ajax(svc, {
