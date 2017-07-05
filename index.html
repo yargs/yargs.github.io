@@ -65,7 +65,8 @@ layout: default
     .usage('$0 &lt;cmd&gt; [args]')
     .command('hello [name]', 'welcome ter yargs!', {
       name: {
-        default: 'default name'
+        default: 'default name',
+        describe: 'the name to say hello to'
       }
     }, function (argv) {
       console.log('hello', argv.name, 'welcome to yargs!')
@@ -80,7 +81,7 @@ layout: default
 
         <pre>
           <code class="hljs language-bash">
-  $ node example.js --help
+  $ example.js --help
           </code>
         </pre>
 
@@ -88,14 +89,13 @@ layout: default
 
         <pre>
           <code class="hljs language-bash">
-  test &lt;cmd&gt; [args]
+            example.js &lt;cmd&gt; [args]
 
-  Commands:
-    hello  welcome ter yargs!
+            Commands:
+              hello [name]  welcome ter yargs!
 
-  Options:
-    --name, -n  provide yer name!
-    --help      Show help                                                [boolean]
+            Options:
+              --help  Show help                                                    [boolean]
           </code>
         </pre>
 
