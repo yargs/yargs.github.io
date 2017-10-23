@@ -1,4 +1,4 @@
-#[yargs.js.org](http://yargs.js.org)
+# [yargs.js.org](http://yargs.js.org)
 
 [![Build Status](https://travis-ci.org/yargs/yargs.github.io.png)](https://travis-ci.org/yargs/yargs.github.io)
 
