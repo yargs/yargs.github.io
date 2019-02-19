@@ -62,6 +62,7 @@ layout: default
   #!/usr/bin/env node
 
   require('yargs')
+    .scriptName("pirateParser")
     .usage('$0 &lt;cmd&gt; [args]')
     .command('hello [name]', 'welcome ter yargs!', (yargs) => {
       yargs.positional('name', {
@@ -90,7 +91,7 @@ layout: default
 
         <pre>
           <code class="hljs language-bash">
-  example.js &lt;cmd&gt; [args]
+  pirateParser &lt;cmd&gt; [args]
 
   Commands:
     hello [name]  welcome ter yargs!
