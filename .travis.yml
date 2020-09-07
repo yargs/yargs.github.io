@@ -1,9 +1,13 @@
 language: ruby
 rvm:
   - 2.7
+install:
+  - gem uninstall bundler
+  - gem install bundler --version '1.7.4
+  - bundle install
 script:
   - bundle exec jekyll build
-  - bundle exec htmlproof ./_site --only-4xx --check-favicon --check-html
+  - bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
