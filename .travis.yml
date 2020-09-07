@@ -1,6 +1,6 @@
 language: ruby
-rvm:
-  - 2.7
+ruby:
+  - 2.6
 install:
   - gem uninstall bundler
   - gem install bundler --version '1.7.4'
