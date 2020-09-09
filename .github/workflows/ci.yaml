@@ -17,8 +17,8 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby }}
       - name: Build and test
-      - run: |
-        gem install bundler
-        bundle install
-        bundle exec jekyll build
-        bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html
+        run: |
+          gem install bundler
+          bundle install
+          bundle exec jekyll build
+          bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html
