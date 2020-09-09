@@ -1,0 +1,24 @@
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+name: ci
+jobs:
+  build:
+    runs-on: ubuntu-16.04
+    strategy:
+      matrix:
+        ruby: [ '2.6' ]
+    name: Ruby ${{ matrix.ruby }} test
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+      - name: Build and test
+        run: |
+          gem install bundler
+          bundle install
+          bundle exec jekyll build
+          bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html
