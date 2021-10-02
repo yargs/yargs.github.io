@@ -15,7 +15,8 @@ dl, dd, ol, ul, figure {
  */
 body {
     font-family: $base-font-family;
-    font-size: $base-font-size;
+    // Override flatdoc font size
+    font-size: $base-font-size !important;
     line-height: $base-line-height;
     font-weight: 300;
     color: $text-color;
@@ -92,11 +93,11 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: $brand-color-text !important;
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: darken($brand-color-text, 15%);
     }
 
     &:hover {
