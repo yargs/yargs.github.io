@@ -22,7 +22,7 @@
     padding-left: 2em;
     font-family: $base-font-family;
     font-weight: $base-font-weight;
-    font-size: 3em;
+    font-size: 3rem;
     float: left;
     color: $purple-color;
 
@@ -33,6 +33,7 @@
 }
 
 .site-logo {
+  font-size: 1.1rem;
   position: absolute;
   top: 0.4em;
   width: 7em;
@@ -40,6 +41,8 @@
 }
 
 .site-nav {
+    font-size: 1.1rem;
+    font-family: $base-font-family;
     float: right;
     line-height: 65px;
 
@@ -51,7 +54,7 @@
         line-height: $base-line-height;
         font-family: $base-font-family;
         color: $blue-color;
-        font-size: 1.5em;
+        font-size: 1.5rem;
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
@@ -220,7 +223,7 @@
 
 .page-title {
   font-weight: $base-font-weight;
-  font-size: 3em;
+  font-size: 3rem;
 }
 
 .post-list {

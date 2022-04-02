@@ -1,9 +1,11 @@
 .content-root {
+  font-size: 1.1rem;
+  color: $text-color;
   padding-top: 4em;
 
   div.menubar.fixed {
     will-change: transform;
-    padding-top: 4em;
+    padding-top: 75px;
   }
   
   .content h2 {
