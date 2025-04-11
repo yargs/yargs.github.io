@@ -61,7 +61,10 @@ layout: default
           <code class="hljs language-javascript">
 #!/usr/bin/env node
 
-require('yargs')
+import yargs from 'yargs';
+import { hideBin } from 'yargs/helpers';
+
+yargs()
   .scriptName("pirate-parser")
   .usage('$0 &lt;cmd&gt; [args]')
   .command('hello [name]', 'welcome ter yargs!', (yargs) => {
@@ -74,7 +77,7 @@ require('yargs')
     console.log('hello', argv.name, 'welcome to yargs!')
   })
   .help()
-  .argv
+  .parse(hideBin(process.argv))
 
           </code>
         </pre>
