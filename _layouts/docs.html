@@ -28,40 +28,24 @@
 
     <!-- Initializer -->
     <script>
-      // use a service to wrap registry json in jsonp
-      var svcs = ['https://json2jsonp.com/', 'https://jsonp.afeld.me/']
-      var i = 0
-      var nextSvc = function () {
-        var svc = svcs[i++]
-        if (!svc) {
-          // no jsonp services worked, just use master
-          console.log('falling back to master branch :(')
-          return Flatdoc.run({
+      // registry.npmjs.org supports CORS, so we can fetch it directly
+      fetch('https://registry.npmjs.org/yargs')
+        .then(function (res) { return res.json() })
+        .then(function (data) {
+          var version = data['dist-tags'] && data['dist-tags'].latest
+          if (!version) throw new Error('no latest version found')
+          console.log('determined latest version as %s', version)
+          Flatdoc.run({
+            fetcher: Flatdoc.file('https://raw.githubusercontent.com/yargs/yargs/v' + version + '/docs/api.md')
+          })
+        })
+        .catch(function (err) {
+          // fall back to master branch if the registry lookup fails
+          console.log('falling back to master branch :(', err)
+          Flatdoc.run({
             fetcher: Flatdoc.github('yargs/yargs', 'docs/api.md')
           })
-        }
-        $.ajax(svc, {
-          data: {
-            url: 'https://registry.npmjs.org/yargs'
-          },
-          dataType: 'jsonp',
-          timeout: 2000,
-          jsonpCallback: svc.replace(/\W/g, ''),
-          success: function (data) {
-            var version = data['dist-tags'] && data['dist-tags'].latest
-            if (!version) return nextSvc()
-            console.log('determined latest version as %s via %s', version, svc)
-            Flatdoc.run({
-              fetcher: Flatdoc.file('https://raw.githubusercontent.com/yargs/yargs/v' + version + '/docs/api.md')
-            })
-          },
-          error: function () {
-            console.log('service failed: %s, trying next', svc)
-            nextSvc()
-          }
         })
-      }
-      nextSvc()
     </script>
   </head>
   <body role='flatdoc' class='no-literate'>

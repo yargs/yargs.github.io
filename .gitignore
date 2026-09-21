@@ -3,4 +3,4 @@ _site
 node_modules/
 tmp
 .jekyll-cache
-
+vendor/bundle/
